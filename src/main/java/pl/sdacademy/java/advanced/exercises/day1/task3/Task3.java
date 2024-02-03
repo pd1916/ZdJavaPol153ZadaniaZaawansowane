@@ -1,12 +1,13 @@
 package pl.sdacademy.java.advanced.exercises.day1.task3;
 
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Task3 {
 
     public static void main(String[] args) {
-        Map<String, Integer> input  = new LinkedHashMap<>();
+        Map<String, Integer> input = new LinkedHashMap<>();
         input.put("Java", 18);
         input.put("Python", 1);
         input.put("C#", 15);

@@ -1,6 +1,9 @@
 package pl.sdacademy.java.advanced.exercises.day1.task1;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class Task1 {
     private final static List<String> UNSORTED = List.of("A", "B", "Z", "D", "G", "C");

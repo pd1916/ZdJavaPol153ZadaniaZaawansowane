@@ -1,7 +1,5 @@
 package pl.sdacademy.java.advanced.exercises.day1.task7;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.Stack;
 
 public class WeaponClip {

@@ -15,17 +15,18 @@ public class Task20_21_22 {
         int hexagonPerimeter = hexagon.calculatePerimeter();
         System.out.println("hexagonPerimeter: " + hexagonPerimeter); //12
 
-        Shape3D cube = new Cube(2);
+        Cube cube = new Cube(2);
         double cubeVolume = cube.calculateVolume();
         int cubePerimeter = cube.calculatePerimeter();
         System.out.println("cubeVolume: " + cubeVolume); //8
         System.out.println("cubePerimeter: " + cubePerimeter); //24
+
+        System.out.println(cube.fill(7));
 
 //        Shape cube = new Cube(2);
 //        double cubeVolume = ((Cube) cube).calculateVolume();
 //        int cubePerimeter = cube.calculatePerimeter();
 //        System.out.println("cubeVolume: " + cubeVolume); //8
 //        System.out.println("cubePerimeter: " + cubePerimeter); //24
-
     }
 }

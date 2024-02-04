@@ -7,7 +7,7 @@ public class BasketChecked {
         this.numberOfElements = 0;
     }
 
-    public void addToBasket() throws BasketFullExceptionChecked{
+    public void addToBasket() throws BasketFullExceptionChecked {
         if(numberOfElements == 10) {
             //rzuć wyjątek
             throw new BasketFullExceptionChecked("Too many items in the basket");
@@ -15,7 +15,7 @@ public class BasketChecked {
         numberOfElements++;
     }
 
-    public void removeFromBasket() throws BasketEmptyExceptionChecked{
+    public void removeFromBasket() throws BasketEmptyExceptionChecked {
         if(numberOfElements == 0) {
             //rzuć wyjątek
             throw new BasketEmptyExceptionChecked("Can't remove from empty basket");

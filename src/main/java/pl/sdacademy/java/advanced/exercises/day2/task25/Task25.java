@@ -17,7 +17,7 @@ public class Task25 {
             basketChecked.addToBasket();
             basketChecked.addToBasket();
             basketChecked.addToBasket();
-        }catch (BasketFullExceptionChecked ex) {
+        } catch(BasketFullExceptionChecked ex) {
             System.out.println("Exception: " + ex.getMessage());
         }
 
@@ -33,7 +33,7 @@ public class Task25 {
             basketChecked.removeFromBasket();
             basketChecked.removeFromBasket();
             basketChecked.removeFromBasket();
-        }catch (BasketEmptyExceptionChecked ex) {
+        } catch(BasketEmptyExceptionChecked ex) {
             System.out.println("Exception: " + ex.getMessage());
         }
     }

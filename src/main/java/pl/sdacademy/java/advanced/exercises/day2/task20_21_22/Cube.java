@@ -1,6 +1,6 @@
 package pl.sdacademy.java.advanced.exercises.day2.task20_21_22;
 
-public class Cube extends Shape3D implements Fillable{
+public class Cube extends Shape3D implements Fillable {
     private final int a;
 
     public Cube(int a) {
@@ -19,9 +19,9 @@ public class Cube extends Shape3D implements Fillable{
 
     /**
      * opsiać co metoda robi
+     *
      * @param volume - czym jest ten param
-     * @return
-     *  0 -> oznacza, że figura jest napełniona po brzegi
+     * @return 0 -> oznacza, że figura jest napełniona po brzegi
      * +1 -> oznacza, że wody jest zbyt dużo
      * -1 -> oznacza, że wody jest zbyt mało
      */

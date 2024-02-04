@@ -1,7 +1,6 @@
-package pl.sdacademy.java.advanced.exercises.day2.task12;
+package pl.sdacademy.java.advanced.exercises.day2.task12_13;
 
 import java.util.List;
-import java.util.Optional;
 
 public class Task12_13 {
     public static void main(String[] args) {

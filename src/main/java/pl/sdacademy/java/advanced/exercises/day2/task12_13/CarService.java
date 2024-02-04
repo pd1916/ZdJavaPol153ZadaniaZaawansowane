@@ -1,9 +1,8 @@
-package pl.sdacademy.java.advanced.exercises.day2.task12;
+package pl.sdacademy.java.advanced.exercises.day2.task12_13;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 public class CarService {
     private final List<Car> cars;

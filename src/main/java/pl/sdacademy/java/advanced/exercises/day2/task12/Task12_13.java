@@ -1,6 +1,7 @@
 package pl.sdacademy.java.advanced.exercises.day2.task12;
 
 import java.util.List;
+import java.util.Optional;
 
 public class Task12_13 {
     public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class Task12_13 {
 //        List<Car> carRental_1 = mainCarRental.getAll();
 //        carRental_1.add(xc40);
 //        carRental_1.remove(xc90);
-        
+
         CarService carService = new CarService();
         // #Manufacturers
         Manufacturer volvo = new Manufacturer("Volvo", 1930, "Sweden");
@@ -44,5 +45,11 @@ public class Task12_13 {
         carService.add(gls2);
         carService.add(cayenne);
         carService.add(multipla);
+
+        System.out.println("getCarsProducedBefore1999: " + carService.getCarsProducedBefore1999());
+        System.out.println("getCheapestCar: " + carService.getCheapestCar());
+        System.out.println("ascending: " + carService.getCarsSortedByName(true));
+        System.out.println("descending: " + carService.getCarsSortedByName(false));
+
     }
 }

@@ -1,8 +1,6 @@
 package pl.sdacademy.java.advanced.exercises.day3.task32;
 
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.List;

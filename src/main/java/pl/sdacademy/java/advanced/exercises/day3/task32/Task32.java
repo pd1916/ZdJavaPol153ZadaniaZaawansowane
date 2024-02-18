@@ -13,9 +13,9 @@ public class Task32 {
 
         // tworzymy liste samochodów do zapisu
         List<Car> cars = List.of(
-          new Car("Volvo XC90", 400_000, true),
-          new Car("BMW", 100_000, false),
-          new Car("BMW", 500_000, true)
+                new Car("Volvo XC90", 400_000, true),
+                new Car("BMW", 100_000, false),
+                new Car("BMW", 500_000, true)
         );
 
         //zapis do pliku
@@ -27,7 +27,7 @@ public class Task32 {
     }
 
     private static List<Car> readFileContent(Path filepath) {
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filepath.toFile()))){
+        try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filepath.toFile()))) {
             return (List<Car>) ois.readObject();
         } catch(IOException | ClassNotFoundException e) {
             System.out.println("Exception: " + e);
@@ -36,7 +36,7 @@ public class Task32 {
     }
 
     private static boolean saveFileContent(Path filepath, List<Car> content) {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filepath.toFile()))){
+        try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filepath.toFile()))) {
             oos.writeObject(content);
             return true;
         } catch(IOException e) {

@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 
 public class ImageFinder {
 
-    public static List<String> findImages (Path directoryPath) throws IOException {
+    public static List<String> findImages(Path directoryPath) throws IOException {
         return Files.walk(directoryPath)
                 .map(Path::toFile)
                 .filter(isImage())
